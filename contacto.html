@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tintorería Alejandre - Contacto</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-style.css" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de contacto */
+        .contact-info-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        .contact-icon {
+            font-size: 1.25rem;
+            background: #eff6ff;
+            color: var(--primary-color);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+        .contact-details span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 2px;
+        }
+        .contact-details strong, .contact-details a {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            color: var(--primary-color);
+        }
+        .map-wrapper {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand-header-wrapper">
+        <div class="brand">Tintorería Alejandre</div>
+        <div class="address-bar">CALLE CALDEREROS | nº47 | ALCAÑIZ 44600 (TERUEL)</div>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <h2 class="intro-text text-center" style="margin-bottom: 30px;">
+                    <strong>Mapa y Localización</strong>
+                </h2>
+                
+                <div class="row">
+                    <!-- Mapa interactivo -->
+                    <div class="col-md-8" style="margin-bottom: 20px;">
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d517.5228828384733!2d-0.13174365544768174!3d41.04741422538718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5f5b43202aefd7%3A0x1ef1668bdd1c39ca!2sTintorer%C3%ADa+Alejandre+Lavander%C3%ADa+Industrial!5e0!3m2!1ses!2ses!4v1466018419591" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Información de contacto con iconos -->
+                    <div class="col-md-4" style="margin-bottom: 20px;">
+                        <div class="contact-info-card">
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <span>Teléfono Móvil</span>
+                                    <a href="tel:681909797">681 909 797</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <span>Correo Electrónico</span>
+                                    <a href="mailto:anacasesrobres@gmail.com" target="_blank" rel="noopener noreferrer">anacasesrobres@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <span>Dirección</span>
+                                    <strong>Calle Caldereros, 47 Local<br>Alcañiz 44600 (Teruel)</strong>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div> 
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Tintoreria Alejandre 2026</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

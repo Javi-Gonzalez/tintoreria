@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tintorería Alejandre - Inicio</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-style.css" rel="stylesheet">
+    <style>
+        /* Mejoras específicas para la página de inicio */
+        .welcome-text {
+            font-size: 1.15rem;
+            color: #334155;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .gallery-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px;
+            transition: var(--transition);
+            height: 100%;
+        }
+        .gallery-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+        .gallery-card img {
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.4s ease;
+        }
+        .gallery-card:hover img {
+            transform: scale(1.03);
+        }
+        .partner-box {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            transition: var(--transition);
+        }
+        .partner-box:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: var(--primary-color);
+        }
+        .partner-box img {
+            max-height: 50px;
+            object-fit: contain;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand-header-wrapper">
+        <div class="brand">Tintorería Alejandre</div>
+        <div class="address-bar">CALLE CALDEREROS | nº47 | ALCAÑIZ 44600 (TERUEL)</div>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Carrusel / Cartel Principal -->
+        <div class="row">
+            <div class="box text-center" style="padding: 20px;">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive img-full" src="imagenes/cartel.jpg" alt="cartel" style="border-radius: 8px; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Texto de Bienvenida Mejorado -->
+        <div class="row">
+            <div class="box">
+                <h2 class="intro-text text-center" style="margin-bottom: 15px;">
+                    <strong>Tintorería Alejandre</strong>
+                </h2>
+                <p class="welcome-text">
+                    En Tintorería y Lavandería Alejandre, acumulamos más de una década dedicados al cuidado integral de sus prendas. Combinamos la experiencia de nuestros años de trayectoria con las técnicas más avanzadas y respetuosas del mercado, garantizando una limpieza impecable, un trato personalizado y la máxima durabilidad para toda su ropa.
+                </p>
+            </div>
+        </div>
+
+        <!-- Galería de Imágenes Unificada -->
+        <div class="row">
+            <div class="box text-center">
+                <div class="col-sm-3" style="margin-bottom: 20px;">
+                    <div class="gallery-card">
+                        <img class="img-responsive" src="imagenes/fachada.jpg" alt="Fachada">
+                    </div>
+                </div>
+                <div class="col-sm-3" style="margin-bottom: 20px;">
+                    <div class="gallery-card">
+                        <img class="img-responsive" src="imagenes/cartel3.jpg" alt="Cartel">
+                    </div>
+                </div>
+                <div class="col-sm-3" style="margin-bottom: 20px;">
+                    <div class="gallery-card">
+                        <img class="img-responsive" src="imagenes/cartel2.jpg" alt="Cartel 2">
+                    </div>
+                </div>
+                <div class="col-sm-3" style="margin-bottom: 20px;">
+                    <div class="gallery-card">
+                        <img class="img-responsive" src="imagenes/escaparate.jpg" alt="Escaparate">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+		
+        <!-- Sección de Paquetería / Recogida y Entrega -->
+        <div class="row">
+            <div class="box text-center">
+                <h2 class="intro-text" style="margin-bottom: 25px;">
+                    <strong>Somos punto de Recogida y Entrega</strong>
+                </h2>
+                <div class="row" style="max-width: 600px; margin: 0 auto;">
+                    <div class="col-sm-6" style="margin-bottom: 15px;">
+                        <a href="https://www.gls-spain.es/es/" target="_blank" style="text-decoration: none;">
+                            <div class="partner-box">
+                                <img src="imagenes/gls.png" alt="gls">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6" style="margin-bottom: 15px;">
+                        <a href="https://www.ups.com" target="_blank" style="text-decoration: none;">
+                            <div class="partner-box">
+                                <img src="imagenes/ups.jpg" alt="ups">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Tintoreria Alejandre 2026</p>
+        </div>
+    </footer>
+
+    <!-- Aviso de cookies funcional (no vuelve a aparecer al aceptar) -->
+    <div class="cookiesms" id="cookie1">
+        <span>Utilizamos cookies propias y de terceros para mejorar la experiencia de usuario. <a href="politica_cookies.html">Política de cookies</a></span>
+        <button onclick="controlcookies()">Aceptar</button>
+    </div>
+
+    <script src="js/scriptCookies.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({ interval: 5000 });
+    </script>
+</body>
+</html>
